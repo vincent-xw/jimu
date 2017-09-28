@@ -1,0 +1,23 @@
+{
+  "name": "jimu",
+  "version": "1.0.0",
+  "description": "jimu活动页面",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincent-xw/jimu.git"
+  },
+  "keywords": [
+    "mongodb",
+    "javascript"
+  ],
+  "author": "xuewen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vincent-xw/jimu/issues"
+  },
+  "homepage": "https://github.com/vincent-xw/jimu#readme"
+}
