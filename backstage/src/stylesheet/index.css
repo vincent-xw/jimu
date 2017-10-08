@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'jimu';
+    src: url('jimu.ttf')  format('truetype'); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+  }
+html,body,body div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,figure,footer,header,menu,nav,section,time,mark,audio,video,details,summary {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: 400;
+    vertical-align: baseline;
+    background: 0 0;
+    font-family: 'jimu';
+}
+
+article,aside,figure,footer,header,nav,section,details,summary {
+    display: block
+}
+.music{
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 15px;
+    right: 17px;
+    background: url(../image/loading/music.png);
+    background-size: contain;
+}
+.page-loading {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: url("../image/loading/bgimg.png");
+    background-size: 100% 100%;
+}
+.page-loading .robot{
+    margin-top: 20%;
+    text-align: center;
+}
+.page-loading .robot img{
+    width: 65%;
+    margin: 0 auto;
+}
+.page-loading .loadingImage{
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.page-loading .loading-process{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+}
+.page-loading .continue{
+    position: absolute;
+    top: 80%;
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+.page-loading .continue .cert{
+    background: url(../image/loading/1.png);
+    background-size: 25px 14px;
+    width: 25px;
+    height: 14px;
+    display: block;
+    margin: 0 auto;
+}
+.page-loading .continue p{
+    color: #FFFFFF;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.pageContain{
+    display: none;
+}
+.page{
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* .bgImg img{
+    height: 100%;
+    width: 100%;
+} */
+.page-1{
+    height: 100%;
+}
+.bgImg-1{
+    height: 100%;
+    background: url("../image/index/index.png");
+    background-size: cover;
+}
+.clearfix{
+    clear: both;
+}
+
+.contain {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
+    z-index: 0;
+}
+.current .contain,.slide .contain {
+    display: block;
+}
+.current {
+    display: block;
+    z-index: 1;
+}
+.slide {
+    display: block;
+    z-index: 2;
+}
+.swipe {
+    display: block;
+    z-index: 3;
+    transition-duration: 0ms !important;
+    -webkit-transition-duration: 0ms !important;
+}
+
+/* page1 */
+.chooseTeam{
+    padding: 35px;
+    padding-top: 80%;
+    overflow: hidden;
+    position: relative;
+}
+.chooseTeam .teamContainer{
+    display: none;
+}
+.chooseTeam .teamContainer img{
+    width: 100%;
+}
+.chooseTeam a.left{
+    position: absolute;
+    left: 15px;
+    top: 70%;
+}
+.chooseTeam a.right{
+    position: absolute;
+    right: 15px;
+    top: 70%;
+}
+.chooseTeam .left img,.chooseTeam .right img{
+    width: 40px;
+    height: 40px;
+}

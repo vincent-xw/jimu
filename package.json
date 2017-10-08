@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/vincent-xw/jimu/issues"
   },
-  "homepage": "https://github.com/vincent-xw/jimu#readme"
+  "homepage": "https://github.com/vincent-xw/jimu#readme",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "hbs": "^4.0.1"
+  }
 }
