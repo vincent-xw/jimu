@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/vincent-xw/jimu#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "crypto": "^1.0.1",
     "hbs": "^4.0.1"
   }

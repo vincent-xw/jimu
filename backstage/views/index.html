@@ -9,10 +9,10 @@
 </head>
 <body>
     <section id="loading" class="page-loading">
-        <div class="music" data-status="true">
-        </div>
-        <div class="robot">
-            <img src="/image/loading/robot.png" alt="">
+        <!-- <div class="music" data-status="true">
+        </div> -->
+        <div class="ufoContainer">
+            <img class="ufo" src="/image/loading/ufo.png" alt="">
         </div>
         <div id="continue" class="continue">
             <i class="cert"></i>
@@ -21,31 +21,41 @@
         <div class="clearfix"></div>
     </section>
     <div id="pageContain" class="pageContain">
-        <div class="page current">
-            <div class="contain">
-            </div>
-        </div>
         <div class="page page1">
             <div class="contain">
                 <section class="page-1">
                     <div class="bgImg-1">
                         <div class="music" data-status="true"></div>
+                        <div class="title">
+                            <img src="/image/index/title.png" alt="">
+                        </div>
                         <div class="chooseTeam">
-                            <div class="teamContainer">
-                                <img src="/image/index/ly.png" alt="">
+                            <div class="teamContainer" data-team="ly">
+                                <img class="checkMore" src="/image/index/basha.png" alt="">
+                                <img class="basha hidden" src="/image/index/ly_basha.png" alt="">
+                                <img class="chooseTeamImg" src="/image/index/ly.png" alt="">
                             </div>
-                            <div class="teamContainer">
-                                <img src="/image/index/lxp.png" alt="">
+                            <div class="teamContainer" data-team="lxp">
+                                <img class="checkMore" src="/image/index/basha.png" alt="">
+                                <img class="basha hidden" src="/image/index/lxp_basha.png" alt="">
+                                <img class="chooseTeamImg" src="/image/index/lxp.png" alt="">
+                                
                             </div>
-                            <div class="teamContainer">
-                                <img src="/image/index/lzy.png" alt="">
-                                    </div>
+                            <div class="teamContainer" data-team="lzy">
+                                <img class="checkMore" src="/image/index/basha.png" alt="">
+                                <img class="basha hidden" src="/image/index/lzy_basha.png" alt="">
+                                <img class="chooseTeamImg" src="/image/index/lzy.png" alt="">
+                                
+                            </div>
                             <a class="left" href="javascript:;">
                                 <img src="/image/index/left.png" alt="">
                             </a>
                             <a class="right" href="javascript:;">
                                 <img src="/image/index/right.png" alt="">
                             </a>
+                        </div>
+                        <div class="confirmBtn">
+                            <img id="confirmBtn" src="/image/index/confirm.png" alt="">
                         </div>
                     </div>
                 </section>
@@ -55,8 +65,27 @@
             <div class="contain">
                 <section class="page-2">
                     <div class="music" data-status="true"></div>
-                    <div class="bgImg">
-                        <img src="/image/pinjie/pinjiebg.png" alt="">
+                    <div class="bgImg-2">
+                        <div class="title">
+                            <img src="/image/pinjie/title.png" alt="">
+                        </div>
+                        <div id="bigContainer" class="bigContainer">
+                            
+                        </div>
+                        <div class="comContainer">
+                            <ul id="comList" class="comList">
+                                
+                            </ul>
+                        </div>
+                        <div class="btnGroup">
+                            <div class="btnGroupLeft">
+                                <img id="restart" src="/image/pinjie/restart.png" alt="">
+                            </div>
+                            <div class="btnGroupRight">
+                                <img id="wakeUp" src="/image/pinjie/wakeup.png" alt="">                                    
+                            </div>
+                        </div>
+                        <!-- <img src="/image/pinjie/pinjiebg.png" alt=""> -->
                     </div>
                 </section>
             </div>
@@ -65,8 +94,30 @@
             <div class="contain">
                 <section class="page-3">
                     <div class="music" data-status="true"></div>
-                    <div class="bgImg">
-                        <img src="/image/program/programbg.png" alt="">
+                    <div class="bgImg-3">
+                        <div class="taskTitle">
+                            <span class="titleContent">任务名称任务名称</span>
+                        </div>
+                        <div class="programArea">
+                            <div id="task" class="task">
+                                
+                            </div>
+                            <div id="instruction" class="instruction">
+                                
+                            </div>
+                            <div id="showResult" class="showResult">
+                                
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="btnGroup">
+                            <div class="btnGroupActive">
+                                <img id="complete" src="/image/program/complete.png" alt="">
+                                <br>
+                                <span style="color:#FFFFFF;">实际编程体验以jimu APP为准</span>
+                            </div>
+                        </div>
+                        <!-- <img src="/image/program/programbg.png" alt=""> -->
                     </div>
                 </section>
             </div>
@@ -75,8 +126,32 @@
             <div class="contain">
                 <section class="page-4">
                     <div class="music" data-status="true"></div>
-                    <div class="bgImg">
-                        <img src="/image/index/index.png" alt="">
+                    <div class="bgImg-4">
+                        <div class="completeTitle">
+                            <img src="/image/complete/title.png" alt="">
+                        </div>
+                        <div class="completeContent">
+                            <div class="headContent">
+                                <img class="headImgBg" src="/image/complete/headImg.png" alt="">
+                                <img class="headImg" id="headImg" src="/image/complete/headImg.png" alt="">
+                            </div>
+                            <div class="left">
+                                <p>
+                                    <span class="firstWord">嘿！</span><span id="name"></span>恭喜你成为Jimu星球星宝战队的第2000号成员！
+                                </p>
+                            </div>
+                            <div class="right">
+                                <img src="/image/complete/lxp.png" alt="">
+                            </div>
+                        </div>
+                        <div class="phoneContent">
+                            <p class="second">马上领取星宝战队的<span>专属见面礼</span>吧！</p>
+                        </div>
+                        <div class="next">
+                            <img id="goGetIt" src="/image/complete/goGetIt.png" alt="">
+                            <img id="phone" src="/image/complete/next.png" alt="">
+                        </div>
+                        <!-- <img src="/image/index/index.png" alt=""> -->
                     </div>
                 </section>
             </div>
@@ -85,8 +160,56 @@
             <div class="contain">
                 <section class="page-5">
                     <div class="music" data-status="true"></div>
-                    <div class="bgImg">
-                        <img src="/image/index/index.png" alt="">
+                    <div class="bgImg-5">
+                        <div class="completeTitle">
+                            <img src="/image/share/title.png" alt="">
+                        </div>
+                        <div class="teamContainer-1" id="teamContainer">
+                            <div class="team">
+                                <img class="scoreImg" src="/image/share/first.png" alt="">
+                                <div class="score">
+                                    <img class="bar" src="/image/share/bar-3.png" alt="">
+                                    <p class="teamGroup">鹦鹉战队</p>
+                                    <p class="scoreGroup">2048'</p>
+                                </div>
+                                <div class="robot">
+                                    <img class="ly-robot" src="/image/share/ly.png" alt="">
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="team">
+                                    <img class="scoreImg" src="/image/share/second.png" alt="">
+                                    <div class="score">
+                                        <img class="bar" src="/image/share/bar-2.png" alt="">
+                                        <p class="teamGroup">智慧羊战队</p>
+                                        <p class="scoreGroup">1024'</p>
+                                    </div>
+                                    <div class="robot">
+                                        <img class="lzy-robot" src="/image/share/lzy.png" alt="">
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="team">
+                                        <img class="scoreImg" src="/image/share/third.png" alt="">
+                                        <div class="score">
+                                            <img class="bar" src="/image/share/bar-1.png" alt="">
+                                            <p class="teamGroup">星宝</p>
+                                            <p class="scoreGroup">2048'</p>
+                                        </div>
+                                        <div class="robot">
+                                            <img class="lxp-robot" src="/image/share/lxp.png" alt="">
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                        </div>
+                        <div class="buttonGroup">
+                            <img id="change" class="change" src="/image/share/chooseNew.png" alt="">
+                            <br>
+                            <img src="/image/share/shareImg.png" alt="" class="shareBtn"><img src="/image/share/callFriend.png" alt="" class="shareBtn">
+                        </div>
+
+                        <!-- <img src="/image/index/index.png" alt=""> -->
                     </div>
                 </section>
             </div>
@@ -95,5 +218,6 @@
 </body>
 <script src="/script/fullPage.min.js"></script>
 <script src="/script/jquery.min.js"></script>
+<script src="/script/drag.js"></script>
 <script src="/script/index.js"></script>
 </html>

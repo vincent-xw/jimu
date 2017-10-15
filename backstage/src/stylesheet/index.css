@@ -18,6 +18,9 @@ html,body,body div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,ad
 article,aside,figure,footer,header,nav,section,details,summary {
     display: block
 }
+.hidden{
+    display: none;
+}
 .music{
     width: 34px;
     height: 34px;
@@ -27,6 +30,9 @@ article,aside,figure,footer,header,nav,section,details,summary {
     background: url(../image/loading/music.png);
     background-size: contain;
 }
+.musicPlay{
+
+}
 .page-loading {
     display: block;
     position: absolute;
@@ -35,6 +41,37 @@ article,aside,figure,footer,header,nav,section,details,summary {
     z-index: 10;
     background: url("../image/loading/bgimg.png");
     background-size: 100% 100%;
+}
+.page-loading .ufo{
+    position: absolute;
+    width: 40%;
+    top: 10%;
+    left: 19%;
+    transform: rotate(0deg);
+    animation: ufo 3s linear  infinite reverse;
+}
+@keyframes ufo
+{
+    0%   {
+        transform:rotate(0deg);
+        left: 19%;
+    }
+    25%   {
+        transform:rotate(15deg);
+        left: 30%;
+    }
+    50% {
+        transform:rotate(30deg);
+        left: 41%;
+    }
+    75%   {
+        transform:rotate(15deg);
+        left: 30%;
+    }
+    100% {
+        transform:rotate(0deg);
+        left: 19%;
+    }
 }
 .page-loading .robot{
     margin-top: 20%;
@@ -95,8 +132,16 @@ article,aside,figure,footer,header,nav,section,details,summary {
     height: 100%;
     width: 100%;
 } */
+/* page-1 */
 .page-1{
     height: 100%;
+}
+.page-1 .title {
+    padding-top: 5%;
+    text-align: center;
+}
+.page-1 .title img{
+    width: 80%;
 }
 .bgImg-1{
     height: 100%;
@@ -131,31 +176,465 @@ article,aside,figure,footer,header,nav,section,details,summary {
     transition-duration: 0ms !important;
     -webkit-transition-duration: 0ms !important;
 }
-
-/* page1 */
 .chooseTeam{
-    padding: 35px;
-    padding-top: 80%;
+    padding: 35px;    
+    padding-top: 10px;
     overflow: hidden;
     position: relative;
+}
+.chooseTeam .checkMore{
+    width: 65px;
+    position: absolute;
+    top: 68%;
+    right: 10%;
 }
 .chooseTeam .teamContainer{
     display: none;
 }
-.chooseTeam .teamContainer img{
+.chooseTeam .teamContainer .chooseTeamImg{
     width: 100%;
 }
 .chooseTeam a.left{
     position: absolute;
     left: 15px;
-    top: 70%;
+    top: 45%;
 }
 .chooseTeam a.right{
     position: absolute;
     right: 15px;
-    top: 70%;
+    top: 45%;
 }
 .chooseTeam .left img,.chooseTeam .right img{
     width: 40px;
     height: 40px;
+}
+.confirmBtn{
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    top: -63px;
+}
+.confirmBtn img{
+    width: 100%;
+}
+/* page-2 */
+.page-2{
+    height: 100%;
+}
+.bgImg-2{
+    height: 100%;
+    background: url("../image/pinjie/pinjiebg.png");
+    background-size: cover;
+}
+.bgImg-2 .title{
+    width: 100%;
+    text-align: center;
+    padding-top: 10%;
+}
+.bgImg-2 .title img{
+    width: 80%;
+}
+.target{
+    position: absolute;
+    background: red;
+}
+#target_xb_1{
+    width: 100px;
+    height: 40px;
+    top: 39px;
+    left: 50%;
+    margin-left: -60px;
+}
+#target_xb_2{
+    
+}
+#target_xb_3{
+    
+}
+#target_xb_4{
+    
+}
+#target_xb_5{
+    
+}
+#target_xb_6{
+    
+}
+
+.bigContainer{
+    width: 70%;
+    float: left;
+    background: url("../image/pinjie/leftBottom.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    position: relative;
+}
+.bigContainer .bgImg,.bigContainer .bgImg_bottom{
+    position: absolute;
+    width: 75%;
+    top: 25px;
+    left: 16px;
+}
+.bigContainer .bgImg:first-child{
+    z-index: 1;
+}
+.comContainer{
+    width: 26%;
+    margin-top: 16px;
+    float: left;
+    background: url("../image/pinjie/rightBottom.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.comContainer .comList{
+    list-style: none;
+    height: 280px;
+    position: relative;
+}
+.comContainer .comList li{
+    text-align: center;
+    height: 45px;
+}
+.comContainer .comList li img{
+    /* width: 40%; */
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    
+}
+.btnGroup{
+    position: absolute;
+    bottom:0 ;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.btnGroup .btnGroupLeft,.btnGroup .btnGroupRight{
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding-bottom: 5%;
+}
+.btnGroup .btnGroupLeft img,.btnGroup .btnGroupRight img{
+    width: 80%;
+}
+/* page-3 */
+
+.page-3{
+    height: 100%;
+}
+.bgImg-3{
+    height: 100%;
+    background: url("../image/program/programbg.png");
+    background-size: cover;
+}
+.taskTitle{
+    width: 90%;
+    height: 80px;
+    margin: 0 auto;
+    background: url("../image/program/title.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 15%;
+}
+.taskTitle .titleContent{
+    color: #FFFFFF;
+    text-align: center;
+    display: inline-block;
+    line-height: 30px;
+    width: 100%;
+}
+.programArea{
+    position: relative;
+    top: 10%;
+}
+.programArea .task{
+   width: 100%;
+}
+.programArea .task img{
+    width: 75px;
+    padding-right: 5px;
+    float: right;
+    padding-top: 5px;
+}
+.programArea .xingbao{
+    background: url("../image/program/xingbao/task.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 53px;
+}
+
+.programArea .zhihuiyang{
+    background: url("../image/program/zhihuiyang/task.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 53px;
+}
+.programArea .yingwu{
+    background: url("../image/program/yingwu/task.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 53px;
+}
+.instruction{
+    margin-top: 2%;
+    position: relative;
+}
+.instruction .instructionImg,.instruction .instructionImg_bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+}
+.showResult .robot{
+    width: 30%;
+    z-index: 1;
+    padding-left: 50px;
+}
+.showResult{
+
+    text-align: center;
+    padding-top: 100px;
+}
+.showResult .robotBottom{
+    width: 80%;
+    margin-top: -20px;
+}
+.btnGroup .btnGroupActive{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+.btnGroup .btnGroupActive img{
+    width: 40%;
+}
+/* page-4 */
+.page-4{
+    height: 100%;
+}
+.bgImg-4{
+    height: 100%;
+    background: url("../image/complete/completebg.png");
+    background-size: cover;
+}
+.completeTitle{
+    width: 100%;
+    padding-top: 10%;
+    text-align: center;
+}
+.completeTitle img{
+    width: 80%;
+}
+.completeContent{
+    width: 100%;
+    font-size: 0;
+    padding-bottom: 5%;
+    background: url("../image/complete/sun.png") no-repeat;
+    background-size: contain;
+}
+.completeContent .headContent{
+    width: 100%;
+    text-align: center;
+}
+.completeContent .headContent .headImgBg{
+    width: 120px;
+    border-radius: 50%;
+}
+.completeContent .headContent .headImg{
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    margin-top: 25px;
+    width: 60px;
+    border-radius: 50%;
+}
+.completeContent .left,.completeContent .right{
+    display: inline-block;
+}
+.completeContent .left{
+    font-size: 1rem;
+    color: #FFFFFF;
+    width: 60%;
+    text-align: right;
+}
+.completeContent .left p .firstWord{
+    font-size: 28px;
+}
+.completeContent .left p{
+    width: 60%;
+    font-size: 17px;
+    float: right;
+    position: relative;
+    top: -60px;
+}
+.completeContent .right{
+    font-size: 1rem;
+    text-align: right;
+    width: 40%;
+}
+.completeContent .right img{
+    width: 110%;
+    position: relative;
+}
+.phoneContent{
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 auto;
+}
+.phoneContent .first{
+    color: #ffaa4c;
+}
+.phoneContent .second{
+    color: #FFFFFF;
+}
+.phoneContent .second span{
+    font-size: 20px;
+}
+.phoneInput{
+    width: 100%;
+    background: url("../image/complete/phoneInput.png");
+    background-size: cover;
+    overflow: hidden;
+}
+.phoneInput i{
+    width: 5px;
+    height: 10px;
+    background: url("../image/complete/phone.png");
+    background-size: contain;
+}
+.phoneInput .input{
+    float: right;
+    height: 40px;
+    border: 0 ;
+    width: 65%;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0);
+}
+.next{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+.next img{
+    width: 40%;
+}
+/* page-5 */
+.page-5{
+    height: 100%;
+}
+.bgImg-5{
+    height: 100%;
+    background: url("../image/share/sharebg.png");
+    background-size: cover;
+}
+.teamContainer-1{
+    padding-top: 5%;
+    width: 90%;
+    margin: 0 auto;
+}
+.teamContainer-1 .team{
+    position: relative;
+    background: url("../image/share/teambg.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 40px;
+}
+/* .teamContainer-1 .teambg{
+    width: 100%;
+    position: absolute;
+} */
+.teamContainer-1 .robot{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+.teamContainer-1 .robot .ly-robot{
+    position: relative;
+    width: 52%;
+    padding-bottom: 8px;
+    right: -111px;
+    top: 0;
+}
+.teamContainer-1 .robot .lzy-robot{
+    position: relative;
+    width: 52%;
+    padding-bottom: 8px;
+    right: -73px;
+    top: 0;
+}
+.teamContainer-1 .robot .lxp-robot{
+    position: relative;
+    width: 52%;
+    padding-bottom: 8px;
+    right: -73px;
+    top: 0;
+}
+.teamContainer-1 .scoreImg{
+    position: absolute;
+    width: 56px;
+    left: -9px;
+    bottom: 12px;
+}
+.teamContainer-1 .score{
+    width: 70%;
+    left: 45px;
+    bottom: 0;
+    position: absolute;
+    padding-bottom: 10px;
+}
+.teamContainer-1 .score .teamGroup,.teamContainer-1 .score .scoreGroup{
+    width: 40%;
+    float: left;
+    color: #ffa356;
+}
+.teamContainer-1 .score .scoreGroup{
+    text-align: right;
+}
+.teamContainer-1 .score .bar{
+    width: 80%;
+    padding-bottom: 15px;
+}
+.bgImg-5 .buttonGroup {
+    width: 100%;
+    text-align: center;
+    margin-top: -33px;
+}
+.bgImg-5 .buttonGroup .change{
+    width: 40%;
+}
+.bgImg-5 .buttonGroup .shareBtn{
+    width: 40%;
+    padding-top: 10px;
+
+}
+
+/* 适配iPhone 5 */
+@media only screen and (max-width: 370px){
+    .page-loading .ufo{
+        width: 35%;
+    }
+    .chooseTeam .checkMore{
+        width: 65px;
+        position: absolute;
+        top: 63%;
+        right: 11%;
+    }
+    .bigContainer .bgImg,.bigContainer .bgImg_bottom{
+        position: absolute;
+        width: 75%;
+        top: 45px;
+        left: 31px;
+    }
+}
+/* 适配iPhone 6p */
+@media only screen and (min-width: 413px){
+    .page-loading .ufo{
+        width: 45%;
+    }
 }

@@ -1,0 +1,28 @@
+{
+    "xingbao":[
+        {
+            "left":"10px",
+            "top":"10px"
+        },
+        {
+            "left":"10px",
+            "top":"50px"
+        },
+        {
+            "left":"10px",
+            "top":"90px"
+        },
+        {
+            "left":"10px",
+            "top":"130px"
+        },
+        {
+            "left":"10px",
+            "top":"170px"
+        },
+        {
+            "left":"10px",
+            "top":"210px"
+        }
+    ]
+}
